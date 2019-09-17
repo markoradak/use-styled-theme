@@ -4,7 +4,8 @@
   "description": "React hook for getting Styled Components theme values.",
   "author": "markoradak",
   "license": "MIT",
-  "repository": "markoradak/use-styled-theme",
+  "repository": "https://github.com/markoradak/use-styled-theme",
+  "bugs": "https://github.com/markoradak/use-styled-theme/issues",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -21,6 +22,15 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "keywords": [
+    "styled-components",
+    "styled",
+    "theme",
+    "react",
+    "hook",
+    "hooks",
+    "use"
+  ],
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
