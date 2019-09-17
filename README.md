@@ -1,4 +1,4 @@
-# use-styled-theme
+# 🎨 use-styled-theme
 
 > React hook for getting Styled Components theme values.
 
@@ -7,23 +7,32 @@
 ## Install
 
 ```bash
-npm install --save use-styled-theme
+npm i use-styled-theme || yarn add use-styled-theme
 ```
+
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import { ThemeProvider } from "styled-components";
+import useStyledTheme from 'use-styled-theme'
 
-import MyComponent from 'use-styled-theme'
+const Component = () => {
+  const { color } = useStyledTheme();
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+  return (
+    <div style={{ backgroundColor: color }}>
+      <h1>{color}</h1>
+    </div>
+  );
+};
+
+const App = () => (
+  <ThemeProvider theme={{ color: "#BADA55" }}>
+    <Component />
+  </ThemeProvider>
+);
 ```
 
 ## License
