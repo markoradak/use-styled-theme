@@ -35,6 +35,8 @@ const App = () => (
 );
 ```
 
+Example available on [Codesandbox](https://codesandbox.io/s/dark-river-ty06w)
+
 ## License
 
 MIT © [markoradak](https://github.com/markoradak)
